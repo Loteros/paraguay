@@ -20,12 +20,13 @@
                             <p:inputText id="usuario" value="#{ValidacionBean.usuario}"/>
                             <h:outputText value="Password"/>
                             <p:inputText id="password" value="#{Validacion.password}"/>
-                        </h:panelGrid> 
-                        <p>
-                            <h:outputText value="#{ValidacionBean.resultado}"/>
-                        </p>
-
+                            <h:outputText />
+                            <h:commandButton value="Entrar" action="#{ValidacionBean.validar}"/>
+                        </h:panelGrid>     
                     </h:form>
+                    <p>
+                            <h:outputText value="#{ValidacionBean.resultado}"/>
+                    </p>
                 </f:view>
             </ui:define>
 
