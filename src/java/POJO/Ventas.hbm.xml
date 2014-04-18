@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 17-abr-2014 19:04:40 by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="POJO.Ventas" table="ventas" catalog="loterias">
+        <id name="idVenta" type="string">
+            <column name="id_venta" length="30" />
+            <generator class="assigned" />
+        </id>
+        <property name="idUsuario" type="string">
+            <column name="id_usuario" length="10" not-null="true" />
+        </property>
+        <property name="fechaHora" type="date">
+            <column name="fecha_hora" length="0" not-null="true" />
+        </property>
+        <property name="total" type="long">
+            <column name="total" precision="10" scale="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 17-abr-2014 19:04:40 by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="POJO.DetalleVenta" table="detalle_venta" catalog="loterias">
+        <composite-id name="id" class="POJO.DetalleVentaId">
+            <key-property name="idVenta" type="string">
+                <column name="id_venta" length="30" />
+            </key-property>
+            <key-property name="idJugada" type="string">
+                <column name="id_jugada" length="30" />
+            </key-property>
+        </composite-id>
+        <property name="descuento" type="long">
+            <column name="descuento" precision="10" scale="0" not-null="true" />
+        </property>
+        <property name="subtotal" type="long">
+            <column name="subtotal" precision="10" scale="0" not-null="true" />
+        </property>
+        <property name="comentario" type="string">
+            <column name="comentario" length="500" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

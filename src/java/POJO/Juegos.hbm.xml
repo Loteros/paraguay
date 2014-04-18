@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 17-abr-2014 19:04:40 by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="POJO.Juegos" table="juegos" catalog="loterias">
+        <id name="idJuego" type="string">
+            <column name="id_juego" length="10" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombreJuego" type="string">
+            <column name="nombre_juego" length="30" not-null="true" />
+        </property>
+        <property name="precioApuesta" type="long">
+            <column name="precio_apuesta" precision="10" scale="0" not-null="true" />
+        </property>
+        <property name="numeroApuestasMinimas" type="int">
+            <column name="numero_apuestas_minimas" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

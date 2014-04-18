@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 17-abr-2014 19:04:40 by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="POJO.Sesiones" table="sesiones" catalog="loterias">
+        <id name="idSesion" type="string">
+            <column name="id_sesion" length="30" />
+            <generator class="assigned" />
+        </id>
+        <property name="idUsuario" type="string">
+            <column name="id_usuario" length="10" not-null="true" />
+        </property>
+        <property name="fechaInicio" type="date">
+            <column name="fecha_inicio" length="0" not-null="true" />
+        </property>
+        <property name="fechaFin" type="date">
+            <column name="fecha_fin" length="0" not-null="true" />
+        </property>
+        <property name="ip" type="string">
+            <column name="ip" length="30" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
