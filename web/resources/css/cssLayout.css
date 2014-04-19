@@ -8,6 +8,7 @@
 }
 
 #bottom {
+    clear: both;
     position: relative;
     background-color: #c2dfef;
     padding: 5px;
@@ -19,6 +20,8 @@
     background-color: #ece3a5;
     padding: 5px;
     width: 150px;
+    height: 388px;
+     margin: 0px 0px 10px 0px;
 }
 
 #right {

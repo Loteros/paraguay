@@ -15,7 +15,6 @@ function marcar(i)
             if(Euromillones.length<5)
             {
                 Euromillones.push(i);
-                alert(Euromillones.length);
                 var texto = document.createTextNode("X");
             }else{
                 alert("Ya ha marcado la cantidad máxima de números permitidos.")

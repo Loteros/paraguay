@@ -11,23 +11,23 @@
         <ui:composition template="./plantillas/plantilla.xhtml">
 
             <ui:define name="content">
-               <h1> Autenticación de usuarios.</h1>
-        
+                <h1> Autenticación de usuarios.</h1>
+
                 <f:view>
                     <h:form id="frmLogin">
                         <h:panelGrid columns="2">
                             <h:outputText value="Usuario"/>
-                            <p:inputText id="usuario" value="#{ValidacionBean.usuario}"/>
+                            <p:inputText id="usuario" value="#{mB_Login.usuario}"/>
                             <h:outputText value="Password"/>
-                            <p:inputText id="password" value="#{Validacion.password}"/>
-                            <h:outputText />
-                            <h:commandButton value="Entrar" action="#{ValidacionBean.validar}"/>
-                        </h:panelGrid>     
+                            <p:password id="password" value="#{mB_Login.clave}"/>
+                            <h:outputText/>
+                            <h:commandButton value="Entrar" action="#{mB_Login.login()}"/>
+                        </h:panelGrid>   
+                        <h:messages/>
                     </h:form>
-                    <p>
-                            <h:outputText value="#{ValidacionBean.resultado}"/>
-                    </p>
+
                 </f:view>
+
             </ui:define>
 
         </ui:composition>

@@ -16,3 +16,9 @@
 table{ background-color: white;}
 
 table p {color:red;}
+
+.menu {
+    text-align: center;
+    margin: 8px 8px;
+}
+

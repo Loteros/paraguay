@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <body>
+
+        <ui:composition template="./plantillas/plantilaSorteos.xhtml">
+
+            <ui:define name="top">
+                top
+            </ui:define>
+
+            <ui:define name="left">
+                left
+            </ui:define>
+
+            <ui:define name="content">
+                <!--
+                 <hr/>
+                 
+                 <p:growl id="growl" showDetail="true" life="3000" />  
+ 
+                 <h:form id="formLogin">  
+ 
+                     <p:panel header="Ingresa usuario y clave">  
+ 
+                         <h:panelGrid columns="2" cellpadding="5">  
+                             <h:outputLabel for="username" value="Usuario:" />  
+                             <p:inputText value="#{loginBean.usuario.nombreUsuario}"   
+                                          id="username" required="true" label="username" />  
+ 
+                             <h:outputLabel for="password" value="Clave:" />  
+                             <p:password value="#{loginBean.usuario.clave}"   
+                                            id="password" required="true" label="password" />  
+ 
+                             <f:facet name="footer">  
+                                 <p:commandButton id="loginButton" value="Login" update=":growl"   
+                                                  actionListener="#{loginBean.login(actionEvent)}"   
+                                                  oncomplete="handleLoginRequest(xhr, status, args)"/>  
+                             </f:facet>  
+                         </h:panelGrid>  
+                     </p:panel>
+                 </h:form>  
+ 
+                 <script type="text/javascript">
+                     function handleLoginRequest(xhr, status, args) {
+                         if (args.validationFailed || !args.loggedIn) {
+                             PF('#formLogin').jq.effect("shake", {times: 5}, 100);
+                         }
+                         else {
+                             //PF('dlg').hide();
+                             //$('#loginLink').fadeOut();
+                             location.href = args.ruta;
+                         }
+                     }
+                 </script>  
+ 
+                -->
+            </ui:define>
+
+            <ui:define name="bottom">
+                bottom
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

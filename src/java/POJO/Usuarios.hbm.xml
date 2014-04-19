@@ -11,9 +11,11 @@
         <property name="nombreUsuario" type="string">
             <column name="nombre_usuario" length="30" not-null="true" />
         </property>
+        <!--
         <property name="tipoUsuario" type="string">
             <column name="tipo_usuario" length="14" not-null="true" />
         </property>
+        -->
         <property name="clave" type="string">
             <column name="clave" length="9" not-null="true" />
         </property>
