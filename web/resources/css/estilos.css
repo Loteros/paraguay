@@ -13,12 +13,28 @@
     background: white url('/jsf/faces/javax.faces.resource/./img/euromillon.png') no-repeat top;
 }
 
-table{ background-color: white;}
-
-table p {color:red;}
-
 .menu {
     text-align: center;
     margin: 8px 8px;
 }
+
+table{ 
+    background-color: white;
+    float: left; 
+    display: block;
+    margin: 0px 18px 0px 0px;
+}
+
+.numEuro{
+    width: 18px;
+    text-align: center;
+}
+
+.estEuro{
+    background: yellow;
+    text-align: center;
+}
+
+table p {color:red;}
+
 

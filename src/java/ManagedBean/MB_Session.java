@@ -37,7 +37,7 @@ public class MB_Session {
         httpServletRequest.getSession().removeAttribute("sessionUsuario");
         facesMessage = new FacesMessage(FacesMessage.SEVERITY_INFO, "Sesión cerrada correctamente.",null);
         facesContext.addMessage(null, facesMessage);
-        return "index";
+        return "/faces/index";
     }
     
     
